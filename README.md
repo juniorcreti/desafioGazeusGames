@@ -186,10 +186,10 @@ Neste frontend foram manipulados alguns objetos do AngularJS, com objetivo de de
 
 <table>
 	<th> Lista de Players
-<img src="https://user-images.githubusercontent.com/4553131/67335884-caa01180-f4fa-11e9-919b-5d7f427c78af.png" width="451" height="300">
+<img src="https://user-images.githubusercontent.com/4553131/67335884-caa01180-f4fa-11e9-919b-5d7f427c78af.png" width="501" height="300">
 	</th><th >
  Lista Top Players 
-<img src="https://user-images.githubusercontent.com/4553131/67336281-72b5da80-f4fb-11e9-8460-e5e82848c48c.png" width="451" height="300">
+<img src="https://user-images.githubusercontent.com/4553131/67336281-72b5da80-f4fb-11e9-8460-e5e82848c48c.png" width="501" height="300">
 </th><th>
  Lista Top Players com seleção de players
 <img src="https://user-images.githubusercontent.com/4553131/67336341-8cefb880-f4fb-11e9-97d8-83982dbcc86a.png" width="411" height="300">
