@@ -1,6 +1,6 @@
 <table>
 	<th> Lista de Players
-<img src="https://user-images.githubusercontent.com/4553131/67336746-3e8ee980-f4fc-11e9-864e-02893f86e982.png" width="411" height="300">
+<img src="https://user-images.githubusercontent.com/4553131/67336746-3e8ee980-f4fc-11e9-864e-02893f86e982.png" width="1400" height="50">
 	</th><
 # Gazeus Games TOP Players
 
@@ -183,7 +183,6 @@ Criação do Front End com Angular JS para teste http://localhost:8050/
 Neste frontend foram manipulados alguns objetos do AngularJS, com objetivo de desmostrar meu conhecimento na linguagem.
 
 
-https://user-images.githubusercontent.com/4553131/67336746-3e8ee980-f4fc-11e9-864e-02893f86e982.png
 
 <table>
 	<th> Lista de Players
@@ -197,5 +196,5 @@ https://user-images.githubusercontent.com/4553131/67336746-3e8ee980-f4fc-11e9-86
 </th>
 <th>
  Lista Top Playes com seleção de Games
-<img src="https://user-images.githubusercontent.com/4553131/66246422-41ab6c80-e6ea-11e9-97e5-f031d1b81f60.png" width="411" height="300">
+<img src="https://user-images.githubusercontent.com/4553131/67336374-9da02e80-f4fb-11e9-8946-d87bd70b3b6a.png" width="411" height="300">
 </th>
