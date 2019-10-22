@@ -1,0 +1,35 @@
+.overlay {
+    background: #FFFAFA;  <- I left your 'gray' background
+    display: none;        <- Not displayed by default
+    position: absolute;   <- This and the following properties will
+    top: 0;                  make the overlay, the element will expand
+    right: 0;                so as to cover the whole body of the page
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}
+ .jumbotron {   background-color: #F8F8FF;width:600px; text-align: center; margin-left: auto; margin-right: auto; margin-top:30px}
+ .table { margin-top: 20px}
+ .table td {text-align:center}
+  .table th {text-align:center}
+ .selecionado { background-color:  white }
+ .negrito {font-weight: bold;}
+
+ .navbar-custom {
+    background-color: #808080;
+    color: #ffffff;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #ffffff;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color:  #ff8000;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}

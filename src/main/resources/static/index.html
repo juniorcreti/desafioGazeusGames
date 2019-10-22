@@ -1,0 +1,125 @@
+<html ng-app="listaPlayers">
+
+<head>
+<title>Lista de TOP Players</title>
+<link rel="stylesheet" type="text/css" href="../lib/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../lib/lista.css" />
+<link href="../lib/bootstrap.min.css" rel="stylesheet">
+<link rel="shortcut icon"
+	href="https://s3.amazonaws.com/static.gazeus.com/assets/img/favicon.png?v=1569511332998">
+<link
+	href="https://getbootstrap.com.br/docs/4.1/examples/navbar-fixed/navbar-top-fixed.css"
+	rel="stylesheet">
+<style>
+.btn-primary {
+	background-color: #FF8C00;
+	color: black
+}
+</style>
+
+<script src="../lib/angular.js"></script>
+<script src="../lib/angular-messages.js"></script>
+<script src="../lib/angular-locale_pt-br.js"></script>
+<script src="../lib/angularCustomTop.js"></script>
+
+</head>
+
+<body ng-controller="listaPlayersCtrl">
+
+	<div style="text-align: center">
+		<nav
+			class="navbar navbar-expand-md navbar-custom fixed-top bg-custom "
+			color="blue">
+
+			<a class="navbar-brand" href="index.html"><img
+				src="https://s3.amazonaws.com/static.gazeus.com/assets/img/logo-gazeus.png?v=1569511332998"
+				alt="Italian Trulli" width="100" align="center"> </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarCollapse" aria-controls="navbarCollapse"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a class="nav-link"
+						href="player.html"><h3>Gerenciar Players</h3> <span
+							class="sr-only">(current)</span></a></li>
+					<li class="nav-item"></li>
+
+				</ul>
+			</div>
+		</nav>
+
+	</div>
+	<div class="jumbotron">
+		<img
+			src="https://lh3.googleusercontent.com/mjeTMDPhw266wnQ_Liod1tFh0wLZPaKPh1Li0_BopsZ2X4msapqenmhT2G22wckZuA=w144-h144-n-rw"
+			alt="Italian Trulli" width="110" align="center">
+		<p>
+		<h3>{{app}}</h3>
+
+		<select ng-model="gamesView"
+			ng-options="gamesView.nome  for gamesView in gamesViews"
+			ng-change="update(gamesView.nome)" class="form-control">
+			<option value="">Selecione o Game</option>
+		</select> 
+
+		<table class="table" ng-show="data.data.length>0">
+			<tr>
+				<th></th>
+				<th></th>
+				<th>Nº</th>
+				<th>Id</a></th>
+				<th>Player Game</a></th>
+				<th>Game</th>
+				<th>Total Points</th>
+				<th></th>
+			</tr>
+
+			<tr ng-class="{ 'selecionado negrito': player.selecionado}"
+				ng-repeat="players in data.data |   filter:criterioDeBusca | orderBy: criterioDeOrdenacao: direcaoDaOrdenacao  ">
+				<td></td>
+				<th ng-show="$index<5"><img
+					ng-src="https://java-spring-junior.s3-sa-east-1.amazonaws.com/{{$index+1}}.png"
+					alt="Italian Trulli" width="25" align="center"></th>
+				<th ng-show="$index>4"></th>
+				<th>{{$index + 1}}</th>
+				<td>{{players.id}}</td>
+				<td>{{players.namePlayer}}</td>
+				<td>{{players.nameGame | uppercase}}</td>
+				<td>{{players.totalPoints}}</td>
+				<td><div style="width: 20px; height: 20px"
+						ng-style="{'background-color':planeta.cor}"></div>
+			</tr>
+
+		</table>
+
+		<!-- so this div containing img will be dislpayed only when the showLoader is equal to true-->
+		<div class="text-center">
+			<div class="spinner-border" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+
+		<form name="contatoForm">
+			<select ng-model="MatchI.player"
+			ng-options="player.name for player in playerslist"
+		class="form-control" ng-required="true">
+			<option value="">Selecione o Player</option>
+		</select>
+			<select
+				ng-model="MatchI.game" name="game"
+				ng-options="game.name+' '+game.status  group by game.name for game in games"
+				class="form-control" ng-required="true">
+				<option value="">Selecione o Game</option>
+			</select>
+			<button ng-click="adicionarMatch(MatchI)"
+				class="btn btn-primary btn-block">Adicionar Match</button>
+	</div>
+	</form>
+	<form name="contatoFormG"></form>
+</body>
+
+</html>
+
+
