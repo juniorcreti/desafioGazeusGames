@@ -1,4 +1,4 @@
-<table>
+<table> http://gazeusgames.sytes.net:8050/
 	<th> Lista de Players
 <img src="https://user-images.githubusercontent.com/4553131/67336746-3e8ee980-f4fc-11e9-864e-02893f86e982.png" width="1400" height="50">
 	</th>
