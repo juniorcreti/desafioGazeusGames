@@ -8,7 +8,6 @@
 API REST desenvolvida em Java com Spring Boot e JPA - Postgres para cadastro de partifdas dos games da Gazeus
 Também será possível cadastrar a partida quantas vezes quiser pois somos viciados em GAMES!!!!.
 
-
 ## Pré-requisitos
 
 - Java 
@@ -16,6 +15,17 @@ Também será possível cadastrar a partida quantas vezes quiser pois somos vici
 - Postgres
 - AngularJS
 
+## Executando a aplicação
+
+- Clone o projeto ```git clone https://github.com/juniorcreti/desafioGazeusGames.git```
+- importe o diretorio para eclipse atraves projetos Maven 
+- crie o bando de dados url=jdbc:postgresql://localhost:5432/gazeus conforme esta URL
+- Execute o comando o projeto no eclipse.
+- Execute o JUnit full ele irá criar todos os games e player e Match e ainda irá testar a aplicação isso é fundamental para que a mesma funcione
+    - A API demora alguns segundos para inicializar, para acompanhar a inicialização da aplicação 
+   mesmo assim deixei uma cópia rodando no meu servidor de HMG para testar
+    http://gazeusgames.sytes.net:8050/ 
+   
 ## Documentação API
 
 - [GET]
