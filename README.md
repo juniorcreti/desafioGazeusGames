@@ -6,7 +6,7 @@
 # Gazeus Games TOP Players
 
 API REST desenvolvida em Java com Spring Boot e JPA - Postgres para cadastro de partifdas dos games da Gazeus
-Também será possível cadastrar a partida quantas vezes quiser pois somos viciados em GAMES!!!!.
+Também será possível cadastrar as partidas quantas vezes quiser pois somos viciados em GAMES!!!!.
 
 ## Pré-requisitos
 
