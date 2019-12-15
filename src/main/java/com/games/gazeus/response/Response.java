@@ -9,7 +9,7 @@ public class Response <T>{
 	private List<String> erros;
 	
 	public Response(T data) {
-		this.data=data;
+		this.data=data; 
 		
 	}
 	public Response (List<String> erros) {
